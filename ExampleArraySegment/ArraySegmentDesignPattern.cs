@@ -33,8 +33,6 @@ namespace Example_ArraySegment.ExampleArraySegment
             Console.WriteLine("Print Behavioral patterns:");
             PrintArraySegmentExampleOffset(designPatterns,4,2);
         }
-        
-
         private void PrintArraySegmentExampleOffset(DesignPatterns[] designPatterns,
                                                     int indexOffset, int langhtRange){
 

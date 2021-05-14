@@ -21,7 +21,6 @@ namespace Example_ArraySegment
             arraySegementPatterns.GetListPatternsWichoSlice(3);
             arraySegementPatterns.GetListPatternsWichoSlice(index:2,count:3);
 
-            
             Console.WriteLine();
             Console.WriteLine("PRINT NUMBERS");
 
@@ -31,18 +30,14 @@ namespace Example_ArraySegment
             int rangeCount = 3;
             ArraySegment<int> ArraySegmentRangeNumber = new ArraySegment<int>(numberList,indexOffset, rangeCount);
             
-            
             int countElement = ArraySegmentRangeNumber.Count;
             int getNumberOffset = ArraySegmentRangeNumber.Offset;
-
 
             foreach(int number in ArraySegmentRangeNumber){
                 Console.WriteLine(number);
             }
 
-            // convert to array
             int[] arrayConvert = ArraySegmentRangeNumber.ToArray();
-
             
         }
         private void PrintArraySegmentExampleOffset(ArraySegment<DesignPatterns> array){
